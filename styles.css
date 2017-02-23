@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css?family=Pangolin|Sue+Ellen+Francisco');
+
+h1 {
+    font-family: 'Pangolin', cursive;
+    text-align: center;
+}
+
+p {
+    font-family: 'Sue Ellen Francisco', cursive;
+    text-align: center;
+    font-size: 24px;
+}
+
+#button-container {
+    text-align: center;
+    padding: 20px;
+}
+
+svg {
+    width: 90%;
+    display: block;
+    margin: auto;
+    background: #DDDDDD;
+}
+
+#startBtn {
+    font-family: 'Pangolin', cursive;
+    font-size: 14px;
+    color: #F0D3FF;
+    background-color: #c247ff;
+    border: 10px solid #c247ff;
+    box-shadow: 0px 7px 0px #8832b2;
+    position: relative;
+    top: 0px;
+    transition: all ease 0.01s;
+}
+
+#startBtn:hover {
+    box-shadow: 0 5px 0 #8832b2;
+    top: 3px;
+    transition: all ease 0.25s;
+}
+
+#startBtn:active {
+    box-shadow: 0 3px 0 #8832b2;
+    top: 7px;
+    transition: all ease 0.25s;
+}
