@@ -1,20 +1,24 @@
 var namespace = "http://www.w3.org/2000/svg"
 var currentStamp = 1
 
-makeImage(illust.png, 0, 0, 100, 30, 1)
+
 
 
 // DEFINE your first function here. 
 // This function should create a "stamp" out of at least 2 types of shape.
 // It should take 2 PARAMETERS named x and y, and use them to set the position of the stamp.
 
+function makeHat(x,y) {
+    makeImage("hat.png", x - 3.54, y - 3.54, 7.08, 7.08, 1)
+}
 
 // DEFINE your second function here.
 // This function should create a different "stamp" out of at least 2 types of shape.
 // It should take 2 PARAMETERS named x and y, and use them to set the position of the stamp.
 
-
-
+function letThereBeGOOTH(x,y) {
+    makeImage("gooth.png", x - 5.14, y - 5.14, 10.28, 10.28, 1)
+}
 
 // This function is called whenever the mouse is clicked on the canvas.
 // It figures out the x and y coordinates of where the mouse was clicked, and stores them in the variables xCoord and yCoord.
@@ -31,10 +35,12 @@ function stamp(event) {
   
   if (currentStamp == 1) {
     // CALL your first function here, passing in xCoord and yCoord for the parameters!
+    // makeImage("illust.png", 0, 0, 100, 30, 1)
+      makeHat(xCoord, yCoord)
     
   } else {
     // CALL your second function here, passing in xCoord and yCoord for the parameters!
-    
+      letThereBeGOOTH(xCoord, yCoord)
   }
 
 }

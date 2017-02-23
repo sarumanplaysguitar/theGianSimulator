@@ -3,7 +3,9 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="styles.css">
-    <script src="main.js"></script>
+    <script src="main.js">
+        makeImage0("illust.png", 0, 0, 100, 30, 1)  
+    </script>
   </head>
   <body>
     <h1>THE GIAN SIMULATOR</h1>
@@ -12,6 +14,7 @@
     <div id="button-container">
         <button onclick="currentStamp=1" id="startBtn">MANY LAPTOP HATS</button>
         <button onclick="currentStamp=2" id="startBtn">GOOTHES AND GEETHES GALORE</button>
+        <input type="button" id="startBtn" onClick="window.location.reload()" value="RESET SIMULATOR!">
     </div>
   </body>
 </html>
