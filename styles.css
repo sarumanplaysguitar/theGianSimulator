@@ -44,3 +44,21 @@ svg {
     background: url("imgs/illust.png");
     background-size: 100%;
 }
+
+#animSquires {
+	position: absolute;
+	bottom: 0%;
+	right: 10%;
+}
+
+#animTherese {
+	position: absolute;
+	bottom: 0%;
+	right: 0%;
+}
+
+#animSamoas {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
