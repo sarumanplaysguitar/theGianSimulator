@@ -9,7 +9,21 @@ var currentStamp = 1
 // It should take 2 PARAMETERS named x and y, and use them to set the position of the stamp.
 
 function makeHat(x,y) {
-    makeImage("hat.png", x - 3.54, y - 3.54, 7.08, 7.08, 1)
+    
+    makeImage("imgs/hat_shadow.png", x - 3.54, y - 3.54, 7.08, 7.08, 1)
+    
+    var randomizer = Math.random() * 100
+    
+    if(randomizer < 30) {
+        makeImage("imgs/hat_0.gif", x - 3.54, y - 3.54, 7.08, 7.08, 1)
+    } else if(randomizer < 60) {
+        makeImage("imgs/hat_1.gif", x - 3.54, y - 3.54, 7.08, 7.08, 1)
+    } else if(randomizer < 90) {
+        makeImage("imgs/hat_2.gif", x - 3.54, y - 3.54, 7.08, 7.08, 1)
+    } else {
+        makeImage("imgs/hat_shiny.gif", x - 3.54, y - 3.54, 7.08, 7.08, 1)
+    }
+    
 }
 
 // DEFINE your second function here.
@@ -17,7 +31,7 @@ function makeHat(x,y) {
 // It should take 2 PARAMETERS named x and y, and use them to set the position of the stamp.
 
 function letThereBeGOOTH(x,y) {
-    makeImage("gooth.png", x - 5.14, y - 5.14, 10.28, 10.28, 1)
+    makeImage("imgs/gooth.png", x - 5.14, y - 5.14, 10.28, 10.28, 1)
 }
 
 // This function is called whenever the mouse is clicked on the canvas.
